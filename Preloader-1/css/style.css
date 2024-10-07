@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #dfe6e9;
+}
+.preloader{
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.preloader .box{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    animation: loader 1s linear infinite;
+}
+@keyframes loader{
+    from{
+        background-color: #1B9CFC
+    }
+}
+.box:nth-child(1){
+    animation-delay: 0.25s;
+}
+.box:nth-child(2){
+    top: 0;
+    left: 50%;
+    animation-delay: 0.50s;
+}
+.box:nth-child(3){
+    top: 50%;
+    left: 50%;
+    animation-delay: 0.75s;
+}
+.box:nth-child(4){
+    top: 50%;
+    left: 0;
+    animation-delay: 1s;
+}
